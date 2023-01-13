@@ -1,6 +1,6 @@
 function handleCompletedForm(event) {
   event.preventDefault();
-  
+
   let python = document.getElementById("python");
   python.setAttribute("class", "hidden");
   let javas = document.getElementById("javas");
@@ -10,15 +10,20 @@ function handleCompletedForm(event) {
   let notFromList = document.getElementById("notfromlist");
   notFromList.setAttribute("class", "hidden");
 
-  const snakeSelection = document.querySelector('input[id="animal2"]:checked');
-  const rhinoSelection = document.querySelector('input[id="animal1"]:checked');
+  const rhinoSelection = document.querySelector('input[id="animal1"]:checked').value;
+  const snakeSelection = document.querySelector('input[id="animal2"]:checked').value;
+  const foxSelection = document.querySelector('input[id="animal3"]:checked').value;
 
-    if (snakeSelection.checked == true){
-      python.removeAttribute("class");
-  } else if (rhinoSelection.checked == true) {
+  if (rhinoSelection.checked == true){
     javas.removeAttribute("class");
+  } 
+  if (snakeSelection.checked == true){
+    python.removeAttribute("class");
+  } 
+  if (foxSelection.checked == true){
+    ruby.removeAttribute("class");
   }
 }
-window.addEventListener("load", function(){
+window.addEventListener("load", function () {
   document.getElementById("complete-form").addEventListener("submit", handleCompletedForm);
 });
