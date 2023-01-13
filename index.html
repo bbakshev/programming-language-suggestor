@@ -9,41 +9,34 @@
 <body>
   <h1>Curious about Programming Languages?</h1>
   <p>Have you ever said, <em>“I want to get into web development, but I don't know where to start”?</em> If you are looking for practical ways to begin, then take this quick survery to find out which programming language suits you.</p>
-  <form>
+  <form id="complete-form">
   <p>1. What is your favorite animal?</p>
-    <label>
-      <input type="radio" name="animal" value="bear" checked> Bears</label><br>
-    <label>
-      <input type="radio" name="animal" value="snake"> Snakes</label><br>
-    <label>
-      <input type="radio" name="animal" value="wolf"> Wolves</label><br>
-  <p>2. What is your favorite color?</p>
-    <label>
-      <input type="radio" name="color" value="yellow" checked> Yellow</label><br>
-    <label>
-      <input type="radio" name="color" value="blue"> Blue</label><br>
-    <label>
-      <input type="radio" name="color" value="red"> Red</label><br>
+    <select id="animal">
+      <option>Rhino</option>
+      <option>Snake</option>
+      <option>Fox</option>
+    </select><br>
   <p>3. What is your favorite hobby?</p>
     <label>
-      <input type="radio" name="hobby" value="games" checked> Video Games</label><br>
+      <input type="radio" id="hobby1" name="hobby" value="games" checked> Video Games</label><br>
     <label>
-      <input type="radio" name="hobby" value="internet"> Browse the Internet </label><br>
+      <input type="radio" id="hobby2" name="hobby" value="internet"> Browse the Internet </label><br>
     <label>
-      <input type="radio" name="hobby" value="reading"> Reading</label><br>
+      <input type="radio" id="hobby3" name="hobby" value="reading"> Reading</label><br>
     <p>4. What is your favorite gemstone?</p>
     <label>
-      <input type="radio" name="gem" value="diamond" checked> Diamond</label><br>
+      <input type="radio" id="gem1" name="gem" value="diamond" checked> Diamond</label><br>
     <label>
-      <input type="radio" name="gem" value="moon"> Moonstone</label><br>
+      <input type="radio" id="gem2" name="gem" value="moon"> Moonstone</label><br>
     <label>
-      <input type="radio" name="gem" value="ruby"> Ruby</label><br>
-    <p>5. Ready to find out your programming language:</p>
-    <select id="language">
-      <option>Yes</option>
-      <option>No</option>
-      <option>Whatever</option>
-    </select><br><br>
+      <input type="radio" id="gem3" name="gem" value="ruby"> Ruby</label><br>
+    <p>5. Ready to find out your programming language?</p>
+    <label>
+      <input type="radio" id="yes" name="yes" value="yes" checked> Yes</label><br>
+    <label>
+      <input type="radio" id="no" name="yes" value="no"> No</label><br>
+    <label>
+      <input type="radio" id="whatever" name="yes" value="whatever"> Whatever</label><br><br>
     <button type="submit" class="button1">Submit</button>
   </form>
   <div id="python" class="hidden">
@@ -54,7 +47,7 @@
   <div id="javas" class="hidden">
     <h3>You should learn JavaScript!!</h3>
     <p>JavaScript is the language of the web, and as a result, it is an incredibly popular and well-documented language. It has become more user-friendly over the course of its more recent development, and there are alternatives available that users can migrate to after learning the basics. For example, Typescript is a superset of JavaScript, that provides additional syntax and features that make developing applications in JavaScript easier.</p><br>
-      <img src="img/coffee.png" alt="javas" width="500" height="auto">
+      <img src="img/rhino.png" alt="rhino" width="500" height="auto">
   </div>
   <div id="ruby" class="hidden">
     <h3>You should learn Ruby!!</h3>
