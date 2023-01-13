@@ -10,13 +10,9 @@ function handleCompletedForm(event) {
   let notFromList = document.getElementById("notfromlist");
   notFromList.setAttribute("class", "hidden");
 
-  const trainerSelection = document.getElementById("trainer");
-    if (trainerSelection.value === "Ash"){
-      pikachu.removeAttribute("class");
-    } else if (trainerSelection.value === "Gary"){
-      bulbasaur.removeAttribute("class");
-    } else if (trainerSelection.value === "Misty"){
-      charmander.removeAttribute("class");
+  const animalSelection = document.querySelector('input[name="animal"]:checked');
+    if (animalSelection){
+      python.removeAttribute("class");
     }
   }
 window.addEventListener("load", function(){
