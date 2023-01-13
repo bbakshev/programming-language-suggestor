@@ -2,12 +2,12 @@
   display: none;
 }
 
-.stylebody {
-  margin-left: 110px;
-  margin-right: 110px;
+body {
+  background-color: rgba(128, 128, 128, 0.011);
 }
+
 h1 {
-  font-family: 'Dancing Script';
+  /* font-family: 'Dancing Script';
   font-size: 50px;
   border: solid rgb(149, 216, 255);
   margin-bottom: 30px;
@@ -17,7 +17,14 @@ h1 {
 	padding: 30px;
 	color: rgb(255, 255, 255);
 	text-shadow: 1px 1px 1px #333;
-  background-image: linear-gradient( 135deg, #06c46569 10%, #05a3ff69 100%);
+  background-image: linear-gradient( 135deg, #06c46569 10%, #05a3ff69 100%); */
+
+  position: relative;
+  color: #fff;
+  font: 900 60px Montserrat;
+  text-shadow: 0 10px 25px rgb(0 0 0 / 30%);
+  text-align: center;
+  background: url(https://meowlivia.s3.us-east-2.amazonaws.com/codepen/background/glacier.jpg);
 }
 
 h3 {
@@ -66,4 +73,23 @@ img {
 
 select {
   width: 15%;
+  border-radius: 8px;
+}
+
+.topparagraph {
+  text-align: center;
+}
+
+.formbg {
+  width:100%;
+  padding:15px;
+  border-radius:15px;
+  border:0;
+  box-shadow:2px 4px 10px rgba(0, 0, 0, 0.105);
+  background-color: white;
+}
+
+.stylebody {
+  margin-left: 110px;
+  margin-right: 110px;
 }
