@@ -9,12 +9,60 @@
 <body>
   <h1>Curious about Programming Languages?</h1>
   <p>Have you ever said, <em>“I want to get into web development, but I don't know where to start”?</em> If you are looking for practical ways to begin, then take this quick survery to find out which programming language suits you.</p>
-  <p>What is your favorite color?</p>
+  <form>
+  <p>1. What is your favorite animal?</p>
     <label>
-      <input type="radio" name="color" value="yellow" checked> Yellow </label><br>
+      <input type="radio" name="animal" value="bear" checked> Bears</label><br>
     <label>
-      <input type="radio" name="color" value="blue"> Blue </label><br>
+      <input type="radio" name="animal" value="snake"> Snakes</label><br>
     <label>
-      <input type="radio" name="color" value="orange"> Orange </label><br><br>
+      <input type="radio" name="animal" value="wolf"> Wolves</label><br>
+  <p>2. What is your favorite color?</p>
+    <label>
+      <input type="radio" name="color" value="yellow" checked> Yellow</label><br>
+    <label>
+      <input type="radio" name="color" value="blue"> Blue</label><br>
+    <label>
+      <input type="radio" name="color" value="red"> Red</label><br>
+  <p>3. What is your favorite hobby?</p>
+    <label>
+      <input type="radio" name="hobby" value="games" checked> Video Games</label><br>
+    <label>
+      <input type="radio" name="hobby" value="internet"> Browse the Internet </label><br>
+    <label>
+      <input type="radio" name="hobby" value="reading"> Reading</label><br>
+    <p>4. What is your favorite gemstone?</p>
+    <label>
+      <input type="radio" name="gem" value="diamond" checked> Diamond</label><br>
+    <label>
+      <input type="radio" name="gem" value="moon"> Moonstone</label><br>
+    <label>
+      <input type="radio" name="gem" value="ruby"> Ruby</label><br>
+    <p>5. Ready to find out your programming language:</p>
+    <select id="language">
+      <option>Yes</option>
+      <option>No</option>
+      <option>Whatever</option>
+    </select><br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="python" class="hidden">
+    <h3>You should learn Python!!</h3>
+    <p>Python is known as a beginner-friendly language because of its high-level, readable syntax. Unlike many older, low-level languages Python is very concise and familiar: Code statements are intuitive and read much more like conventionally written instructions.</p><br>
+      <img src="img/python.png" alt="pikachu" width="400" height="auto">
+  </div>
+  <div id="javas" class="hidden">
+    <h3>You should learn JavaScript!!</h3>
+    <p>JavaScript is the language of the web, and as a result, it is an incredibly popular and well-documented language. It has become more user-friendly over the course of its more recent development, and there are alternatives available that users can migrate to after learning the basics. For example, Typescript is a superset of JavaScript, that provides additional syntax and features that make developing applications in JavaScript easier.</p><br>
+      <img src="img/coffee.png" alt="javas" width="500" height="auto">
+  </div>
+  <div id="charmander" class="hidden">
+    <h3>You should learn Ruby!!</h3>
+    <p>Ruby is a dynamic, general-purpose programming language most commonly used for web development. Its key designer, Yukihiro Matsumoto, said that Ruby was designed for humans, not machines, making it a favorite of many developers and tech companies. Its most popular implementation is with the powerful Ruby on Rails web framework.</p><br>
+      <img src="img/ruby.png" alt="ruby" width="400" height="auto">
+  </div>
+  <div id = "notfromlist" class = "hidden">
+    <h2>Please make you complete the survey to get the results!</h2>
+  </div>
 </body>
 </html>
