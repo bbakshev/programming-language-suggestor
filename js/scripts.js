@@ -10,11 +10,15 @@ function handleCompletedForm(event) {
   let notFromList = document.getElementById("notfromlist");
   notFromList.setAttribute("class", "hidden");
 
-  const animalSelection = document.querySelector('input[name="animal"]:checked');
-    if (animalSelection){
+  const snakeSelection = document.querySelector('input[id="animal2"]:checked');
+  const rhinoSelection = document.querySelector('input[id="animal1"]:checked');
+
+    if (snakeSelection.checked == true){
       python.removeAttribute("class");
-    }
+  } else if (rhinoSelection.checked == true) {
+    javas.removeAttribute("class");
   }
+}
 window.addEventListener("load", function(){
   document.getElementById("complete-form").addEventListener("submit", handleCompletedForm);
 });
